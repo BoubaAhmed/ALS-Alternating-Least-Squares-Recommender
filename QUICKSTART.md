@@ -25,6 +25,7 @@ jupyter notebook als-vs-svd-movies1m.ipynb
 ## 📊 Vos Premiers Résultats en 3 Étapes
 
 ### Étape 1 : Charger le Dataset
+
 La première cellule du notebook télécharge automatiquement MovieLens 1M depuis Kaggle.
 
 ```python
@@ -33,6 +34,7 @@ La première cellule du notebook télécharge automatiquement MovieLens 1M depui
 ```
 
 ### Étape 2 : Entraîner le Modèle ALS
+
 ```python
 # Créer et entraîner le modèle
 model = ALSRecommender(n_factors=10, lambda_reg=1.1)
@@ -42,6 +44,7 @@ model.fit(train_matrix, validation_matrix=val_matrix)
 ```
 
 ### Étape 3 : Obtenir des Recommandations
+
 ```python
 # Recommandations pour l'utilisateur 100
 recs = model.recommend_for_user(user_id=100, n_recommendations=10)
@@ -51,13 +54,13 @@ for item_id, score in recs:
 
 ## 📋 Fichiers Importants
 
-| Fichier | Description |
-|---------|-------------|
-| `README.md` | Documentation complète |
-| `SETUP.md` | Guide d'installation détaillé |
+| Fichier                     | Description                     |
+| --------------------------- | ------------------------------- |
+| `README.md`                 | Documentation complète          |
+| `SETUP.md`                  | Guide d'installation détaillé   |
 | `als-vs-svd-movies1m.ipynb` | Notebook principal (à exécuter) |
-| `rapport_ALS.pdf` | Rapport académique |
-| `PPT/` | Présentations visuelles |
+| `rapport_ALS.pdf`           | Rapport académique              |
+| `PPT/`                      | Présentations visuelles         |
 
 ## 🔧 Configuration Kaggle (Important)
 
@@ -86,10 +89,12 @@ Après exécution du notebook :
 ## 🎯 Prochaines Étapes
 
 1. **Comprendre le Code**
+
    - Lire les commentaires du notebook
    - Consulter le rapport complet
 
 2. **Modifier les Hyperparamètres**
+
    ```python
    # Essayez différentes configurations
    model = ALSRecommender(
@@ -107,14 +112,17 @@ Après exécution du notebook :
 ## 🆘 Problèmes Courants
 
 ### "kagglehub api_class not found"
+
 ```bash
 pip install --upgrade kagglehub
 ```
 
 ### "Memory error"
+
 Le dataset est volumineux (~170 MB). Assurez-vous d'avoir 8+ GB de RAM.
 
 ### Notebook très lent
+
 Les calculs sont normaux. Le dataset a 1 million d'évaluations !
 
 ## 📞 Besoin d'Aide ?

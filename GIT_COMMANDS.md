@@ -27,12 +27,14 @@ git config --global --list
 ### 2. Cloner le Repository
 
 **Via HTTPS** (plus simple) :
+
 ```bash
 git clone https://github.com/BoubaAhmed/ALS-Alternating-Least-Squares-Recommender.git
 cd ALS-Alternating-Least-Squares-Recommender
 ```
 
 **Via SSH** (plus sécurisé) :
+
 ```bash
 git clone git@github.com:BoubaAhmed/ALS-Alternating-Least-Squares-Recommender.git
 cd ALS-Alternating-Least-Squares-Recommender
@@ -436,16 +438,19 @@ git filter-branch --tree-filter 'rm -f <fichier>' HEAD
 ## 📚 Ressources Additionnelles
 
 ### Documentation Officielle
+
 - [Git Official Docs](https://git-scm.com/doc)
 - [GitHub Guides](https://guides.github.com/)
 - [GitHub Docs](https://docs.github.com/)
 
 ### Outils Visuels
+
 - [GitKraken](https://www.gitkraken.com/) - GUI pour Git
 - [VS Code Git Integration](https://code.visualstudio.com/docs/editor/versioncontrol)
 - [GitHub Desktop](https://desktop.github.com/)
 
 ### Cheatsheets
+
 ```bash
 # Imprimer une cheatsheet simple
 git help -g

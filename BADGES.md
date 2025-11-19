@@ -21,6 +21,7 @@ Un projet académique comparatif implémentant ALS et SVD...
 ## Badges Disponibles
 
 ### Langages et Versions
+
 ```markdown
 Python 3.8+: https://img.shields.io/badge/Python-3.8+-blue?logo=python&logoColor=white
 Python 3.9+: https://img.shields.io/badge/Python-3.9+-blue?logo=python&logoColor=white
@@ -29,28 +30,33 @@ Python 3.11+: https://img.shields.io/badge/Python-3.11+-blue?logo=python&logoCol
 ```
 
 ### License
+
 ```markdown
 MIT License: https://img.shields.io/badge/License-MIT-yellow.svg
 ```
 
 ### Code Quality
+
 ```markdown
 Code style - Black: https://img.shields.io/badge/code%20style-black-000000.svg
 Code style - PEP8: https://img.shields.io/badge/code%20style-pep8-blue.svg
 ```
 
 ### Status
+
 ```markdown
 Status - Active: https://img.shields.io/badge/Status-Active-brightgreen.svg
 Status - Maintained: https://img.shields.io/badge/Status-Maintained-brightgreen.svg
 ```
 
 ### Documentation
+
 ```markdown
 Documentation: https://img.shields.io/badge/Documentation-100%25-brightgreen.svg
 ```
 
 ### Repository Stats
+
 ```markdown
 GitHub stars: https://img.shields.io/github/stars/BoubaAhmed/ALS-Alternating-Least-Squares-Recommender?style=social
 GitHub forks: https://img.shields.io/github/forks/BoubaAhmed/ALS-Alternating-Least-Squares-Recommender?style=social
@@ -76,14 +82,17 @@ Copier et coller ce bloc au début du README.md :
 ## Personnalisation
 
 ### Créer des Badges Personnalisés
+
 Utiliser https://shields.io/ pour créer des badges personnalisés
 
 ### Format Badge Simple
+
 ```markdown
 ![Badge Name](https://img.shields.io/badge/Label-Message-Color)
 ```
 
 Exemples :
+
 ```markdown
 ![Notebook](https://img.shields.io/badge/Type-Jupyter%20Notebook-F37726)
 ![Dataset](https://img.shields.io/badge/Dataset-MovieLens%201M-blue)
@@ -94,22 +103,22 @@ Exemples :
 
 ## Emojis Utiles
 
-| Emoji | Utilisation |
-|-------|-------------|
-| 📋 | Documentation |
-| 🚀 | Installation/Lancement |
-| 📊 | Données/Dataset |
-| 🧠 | Machine Learning |
-| 💻 | Code |
-| ✅ | Complété |
-| ⚙️ | Configuration |
-| 🔧 | Tools/Installation |
-| 📈 | Résultats/Performance |
-| 🎯 | Objectifs |
-| 📁 | Dossiers/Structure |
-| 🔗 | Liens |
-| 📞 | Contact |
-| 🙏 | Remerciements |
+| Emoji | Utilisation            |
+| ----- | ---------------------- |
+| 📋    | Documentation          |
+| 🚀    | Installation/Lancement |
+| 📊    | Données/Dataset        |
+| 🧠    | Machine Learning       |
+| 💻    | Code                   |
+| ✅    | Complété               |
+| ⚙️    | Configuration          |
+| 🔧    | Tools/Installation     |
+| 📈    | Résultats/Performance  |
+| 🎯    | Objectifs              |
+| 📁    | Dossiers/Structure     |
+| 🔗    | Liens                  |
+| 📞    | Contact                |
+| 🙏    | Remerciements          |
 
 ---
 
@@ -124,8 +133,8 @@ Exemples :
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 [![Status - Active](https://img.shields.io/badge/Status-Active-brightgreen.svg)](#)
 
-Un projet académique comparatif implémentant **Alternating Least Squares (ALS)** 
-et **Singular Value Decomposition (SVD)** pour les systèmes de recommandation 
+Un projet académique comparatif implémentant **Alternating Least Squares (ALS)**
+et **Singular Value Decomposition (SVD)** pour les systèmes de recommandation
 sur le dataset MovieLens 1M.
 
 ## 📋 À Propos
