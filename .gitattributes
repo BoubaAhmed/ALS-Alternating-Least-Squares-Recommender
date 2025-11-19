@@ -1,0 +1,65 @@
+# Fichiers Jupyter
+*.ipynb diff=jupyter
+
+# Auto detect text files and normalize line endings to LF
+* text=auto
+
+# Python
+*.py text eol=lf
+*.pyw text eol=lf
+*.pyx text eol=lf
+*.pyi text eol=lf
+
+# Markdown
+*.md text eol=lf
+*.markdown text eol=lf
+
+# Documentation
+*.rst text eol=lf
+*.txt text eol=lf
+
+# Config files
+*.cfg text eol=lf
+*.ini text eol=lf
+*.toml text eol=lf
+*.yaml text eol=lf
+*.yml text eol=lf
+*.json text eol=lf
+
+# Shell scripts
+*.sh text eol=lf
+*.bash text eol=lf
+
+# Windows shell scripts
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
+
+# Binary files
+*.pkl binary
+*.pickle binary
+*.joblib binary
+*.npy binary
+*.npz binary
+*.pth binary
+*.h5 binary
+*.hdf5 binary
+
+# Images
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.svg binary
+
+# PDFs et documents
+*.pdf binary
+*.pptx binary
+*.docx binary
+
+# Compressed files
+*.zip binary
+*.tar binary
+*.gz binary
+*.rar binary
+*.7z binary

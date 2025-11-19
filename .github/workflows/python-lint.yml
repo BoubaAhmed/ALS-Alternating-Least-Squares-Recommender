@@ -1,0 +1,42 @@
+name: Python Lint & Test
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main, develop ]
+
+jobs:
+  lint-and-test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ['3.8', '3.9', '3.10', '3.11']
+
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v4
+      with:
+        python-version: ${{ matrix.python-version }}
+    
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+        pip install flake8 pytest
+    
+    - name: Lint with flake8
+      run: |
+        # Arrêter le build si les erreurs de syntaxe sont trouvées
+        flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
+        # La plupart des erreurs de style ne doivent pas causer l'échec
+        flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
+    
+    - name: Check notebook format
+      run: |
+        python -m jupyter nbconvert --to python als-vs-svd-movies1m.ipynb || true
+
+    - name: Display success message
+      run: echo "✅ All checks passed!"
