@@ -2,13 +2,13 @@
 
 Comparaison de deux algorithmes de recommandation collaborative : **ALS** et **SVD** sur le dataset MovieLens 1M.
 
-## 🎯 À Propos
+## À Propos
 
 - **ALS** : Implémentation from scratch avec early stopping et régularisation
 - **SVD** : Implémentation Surprise pour comparaison
 - **Dataset** : MovieLens 1M (6,040 utilisateurs × 3,706 films)
 
-## 👥 Auteurs
+## Auteurs
 
 - Mohamed LKHALIDI
 - Ahmed BOUBA
@@ -17,7 +17,7 @@ Comparaison de deux algorithmes de recommandation collaborative : **ALS** et **S
 
 ---
 
-## 📊 Dataset
+## Dataset
 
 ### Caractéristiques
 
@@ -37,20 +37,20 @@ Densité : 4.36%
 
 ---
 
-## 📈 Résultats
+## Résultats
 
 ### Performance Comparative
 
-| Modèle  | RMSE   | MAE    | Prec@10 | Recall@10 | NDCG@10 | Coverage |
-| ------- | ------ | ------ | ------- | --------- | ------- | -------- |
-| **ALS** | 0.3842 | 0.2567 | 0.4521  | 0.3642    | 0.6234  | 89.45%   |
-| **SVD** | 0.3915 | 0.2614 | 0.4389  | 0.3521    | 0.6105  | 88.76%   |
+| Modèle  | RMSE   | MAE    |
+| ------- | ------ | ------ |
+| **ALS** | 0.2160 | 0.1683 |
+| **SVD** | 0.2417 | 0.1965 |
 
-**Conclusion** : ALS légèrement meilleur en RMSE et ranking
+**Conclusion** : ALS légèrement meilleur
 
 ---
 
-## 🧠 Méthodologie
+## Méthodologie
 
 ### Prétraitement
 
@@ -77,7 +77,7 @@ class ALSRecommender:
 
 ---
 
-## 📊 Visualisations
+## Visualisations
 
 ### Courbes d'Entraînement
 
@@ -85,7 +85,7 @@ class ALSRecommender:
 
 ### Matrice Creuse
 
-![Sparse Matrix](PPT/matrix_sparse.png)
+![Sparse Matrix](PPT/matrice_sparse100x100.png)
 
 ### Facteurs Latents (PCA)
 
@@ -93,7 +93,7 @@ class ALSRecommender:
 
 ---
 
-## 🚀 Installation & Utilisation
+## Installation & Utilisation
 
 ### Installation Rapide
 
@@ -125,26 +125,26 @@ mae = model.calculate_mae(test_matrix)
 
 ---
 
-## 📚 Contenu du Notebook
+## Contenu du Notebook
 
-1. ✅ Installation dépendances
-2. ✅ Téléchargement MovieLens 1M
-3. ✅ Exploration et analyse données
-4. ✅ Prétraitement & normalisation
-5. ✅ Construction matrices CSR
-6. ✅ Split train/test/validation
-7. ✅ **Implémentation complète ALS**
-8. ✅ Entraînement avec early stopping
-9. ✅ **SVD via Surprise**
-10. ✅ Comparaison ALS vs SVD
-11. ✅ Visualisation PCA facteurs latents
-12. ✅ Métriques d'évaluation avancées
-13. ✅ Exemples recommandations personnalisées
-14. ✅ Graphiques comparatifs
+1. Installation dépendances
+2. Téléchargement MovieLens 1M
+3. Exploration et analyse données
+4. Prétraitement & normalisation
+5. Construction matrices CSR
+6. Split train/test/validation
+7. **Implémentation complète ALS**
+8. Entraînement avec early stopping
+9. **SVD via Surprise**
+10. Comparaison ALS vs SVD
+11. Visualisation PCA facteurs latents
+12. Métriques d'évaluation avancées
+13. Exemples recommandations personnalisées
+14. Graphiques comparatifs
 
 ---
 
-## 🔍 Métriques Utilisées
+## Métriques Utilisées
 
 - **RMSE** : Erreur quadratique moyenne (0-1 normalisé)
 - **MAE** : Erreur absolue moyenne
@@ -155,7 +155,7 @@ mae = model.calculate_mae(test_matrix)
 
 ---
 
-## 📁 Fichiers
+## Fichiers
 
 ```
 ├── als-vs-svd-movies1m.ipynb    # Notebook principal
@@ -171,7 +171,7 @@ mae = model.calculate_mae(test_matrix)
 
 ---
 
-## 🔧 Dépendances
+## Dépendances
 
 ```
 numpy, pandas, scipy, scikit-learn
@@ -183,26 +183,9 @@ Voir `requirements.txt` pour les versions exactes.
 
 ---
 
-## 📝 Licence
+## Licence
 
 MIT License - Voir `LICENSE` pour détails
-
----
-
-## 🙏 Ressources
-
-- MovieLens dataset : GroupLens Research
-- Scikit-Surprise : Implémentation SVD référence
-- Université Moulay Ismail : Contexte académique
-
----
-
-## 📞 Pour Commencer
-
-1. **Installation** : Voir `SETUP.md`
-2. **5 min démarrage** : `QUICKSTART.md`
-3. **Contribuer** : `CONTRIBUTING.md`
-4. **Questions** : Créer une issue GitHub
 
 ---
 
